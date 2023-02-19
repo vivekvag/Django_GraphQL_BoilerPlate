@@ -79,6 +79,7 @@ WSGI_APPLICATION = 'Day4.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+#Sqlite3
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
@@ -86,13 +87,26 @@ WSGI_APPLICATION = 'Day4.wsgi.application'
 #     }
 # }
 
+#PostreSQL
+#DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'Your Username',
+#         'PASSWORD': 'Your Password',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+
 DATABASES = {
     "default": {
         "ENGINE": "mssql",
-        "NAME": "boilerplate",
-        "USER": "test",
-        "PASSWORD": "graphql#1234",
-        "HOST": "tcp:graphqlboilerplate.database.windows.net",
+        "NAME": "Database Name",
+        "USER": "User Name",
+        "PASSWORD": "Password",
+        "HOST": "Host Address",
         "PORT": "1433",
         "OPTIONS": {"driver": "ODBC Driver 18 for SQL Server", 
         },
